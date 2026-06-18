@@ -1,14 +1,39 @@
-import { Image, StyleSheet } from 'react-native';
+# dependencies
+node_modules/
 
-const logo = require('../../../assets/Copilot_20260608_111229 (1).png');
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
 
-export default function BrandLogo({ style }) {
-  return <Image source={logo} style={[styles.logo, style]} resizeMode="contain" />;
-}
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
-const styles = StyleSheet.create({
-  logo: {
-    width: 72,
-    height: 72,
-  },
-});
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
